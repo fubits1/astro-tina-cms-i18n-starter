@@ -17,7 +17,7 @@ const { title = 'TODO', lang = "en" } = Astro.props;
 
   <body>
     <Header {lang} />
-    <main class="container">
+    <main class="container" dir={lang === 'ar' ? 'rtl' : 'ltr'} >
       <slot />
     </main>
     <Footer />

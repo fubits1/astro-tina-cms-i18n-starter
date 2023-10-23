@@ -1,19 +1,19 @@
 ---
-title: Home
+title: الصفحة الرئيسية
 ---
 
 ### Tina CMS
 
-* Website: [https://tina.io/](https://tina.io/)
-* [Instructions on self-hosting TinaCMS](https://tina.io/docs/self-hosted/overview/)
+* موقع الكتروني: [https://tina.io/](https://tina.io/)
+* [تعليمات حول الاستضافة الذاتية لـ TinaCMS](https://tina.io/docs/self-hosted/overview/)
 * Repo: [fubits1/astro-tina-cms-starter](https://github.com/fubits1/astro-tina-cms-starter)
 
-### Testimonials for Tina CMS
+### شهادات لـ
 
 * Smashing Magazine (2023-09-18): [How Smashing Magazine Uses TinaCMS To Manage An Editorial Workflow](https://www.smashingmagazine.com/2023/09/smashing-magazine-tinacms-manage-editorial-workflow/)
 * Cassidy Williams (2023-10-23): [Trying out TinaCMS](https://blog.cassidoo.co/post/trying-tinacms/)
 
-### Docs for Tina CMS with Astro
+### مستندات Tina CMS مع Astro
 
 * Official Astro docs for [TinaCMS](https://docs.astro.build/en/guides/cms/tina-cms/)
 * Official TinaCMS docs for [Astro](https://tina.io/docs/frameworks/astro/)

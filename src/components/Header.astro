@@ -2,21 +2,21 @@
 // import { Image } from 'astro:assets';
 import LangSwitch from "@components/LangSwitch.astro"
 const { pathname } = Astro.url;
-const {lang} = Astro.props
+const { lang } = Astro.props
 ---
 
 <header>
-  <a class="logo" href="/" class:list={pathname === '/' ? ['active'] : []}>
+  <a class="logo" href={"/" + lang + "/"} class:list={pathname === '/' ? ['active'] : []}>
     <!-- <Image class="logo" src={Logo} alt="Logo" /> -->Logo
   </a>
   <nav>
     <ul>
-      <li><a href="/" class:list={pathname === '/' ? ['active'] : []}>Home</a></li>
+      <li><a href={"/" + lang + "/"} class:list={pathname === '/' ? ['active'] : []}>Home</a></li>
       <li>
         <a href={'/posts/'} class:list={pathname.includes('/posts/') ? ['active'] : []}>Posts</a>
       </li>
       <li>
-        <a href={'/about/'} class:list={pathname.includes('/about/') ? ['active'] : []}>About</a>
+        <a href={"/" + lang + '/about/'} class:list={pathname.includes('/about/') ? ['active'] : []}>About</a>
       </li>
     </ul>
   </nav>

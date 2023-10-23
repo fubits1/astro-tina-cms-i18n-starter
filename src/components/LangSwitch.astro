@@ -3,7 +3,7 @@ const { lang } = Astro.props;
 ---
 <select name="language">
   <option value="en" selected={lang === 'en'} aria-label="English">en</option>
-  <option value="de" selected={lang === 'de'} aria-label="German">de</option>
+  <option value="ar" selected={lang === 'ar'} aria-label="Arabic">ar</option>
   <option value="ru" selected={lang === 'ru'} aria-label="Russian">ru</option>
 </select>
 
@@ -23,7 +23,7 @@ select.addEventListener('change', (e) => {
 
 <style>
 select {
-  width: 8ch;
+  width: 9ch;
   margin-bottom: 0;
 }
 </style>
