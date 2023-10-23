@@ -14,9 +14,9 @@
   "devDependencies": {
     "@picocss/pico": "^1.5.10",
     "@tinacms/cli": "^1.5.31",
-    "astro": "^3.2.3",
+    "astro": "^3.3.3",
     "dotenv": "^16.3.1",
-    "marked": "^9.1.0",
+    "marked": "^9.1.2",
     "tinacms": "^1.5.22"
   }
 }
