@@ -34,7 +34,7 @@
 
 - add environment variables to deployment environment:
   - `TINA_CLIENT_ID`
-  - `TINA_EDIT_TOKEN`
+  - `TINA_READ_ONLY_TOKEN`
   
 ## TODO
 
