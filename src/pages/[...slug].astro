@@ -1,0 +1,25 @@
+---
+import Layout from '@layouts/main.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('editorial');
+  return pages.map((entry) => {
+    // workaround for /home route to drop "home" from the path
+    const slug = entry.slug;
+    const parsedSlug = slug === 'home' ? undefined : slug;
+    return {
+      params: { slug: parsedSlug },
+      props: { entry, slug, parsedSlug },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <h2>{entry.data.title}</h2>
+  <Content />
+</Layout>

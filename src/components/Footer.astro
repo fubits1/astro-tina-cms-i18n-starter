@@ -1,0 +1,30 @@
+---
+// import { Image } from 'astro:assets';
+const { pathname } = Astro.url;
+---
+
+<footer>
+  <h5>Astro + TinaCMS</h5>
+  <a href="https://github.com/fubits1/astro-tina-cms-starter" target="_blank" rel="noopener">GitHub Repository</a>
+  <a href={'/imprint/'} class:list={pathname.includes('/imprint/') ? ['active'] : []}>Imprint</a>
+</footer>
+
+<style>
+  footer {
+    position: sticky;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--background-color);
+    gap: 1rem;
+  }
+
+  footer h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+</style>

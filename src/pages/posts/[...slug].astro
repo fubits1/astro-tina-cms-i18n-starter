@@ -1,0 +1,24 @@
+---
+import Layout from '@layouts/main.astro';
+import TOC from '@components/TOC.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('posts');
+  return pages.map((entry) => {
+    return {
+      params: { slug: entry.slug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <h2>{entry.data.title}</h2>
+  {headings.length > 0 && <TOC headings={headings} />}
+  <Content />
+</Layout>

@@ -1,0 +1,16 @@
+---
+const {headings} = Astro.props
+---
+
+<details>
+  <summary>TOC / Headings</summary>
+  <ul>
+    {
+      headings.map((heading) => (
+        <li>
+          <a href={'#' + heading.slug}>{heading.text}</a>
+        </li>
+      ))
+    }
+  </ul>
+</details>

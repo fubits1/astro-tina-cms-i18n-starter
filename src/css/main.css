@@ -1,0 +1,8 @@
+@import '@css/reset.css';
+@import '@picocss/pico';
+
+main {
+  padding: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
+}

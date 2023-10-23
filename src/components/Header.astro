@@ -1,0 +1,75 @@
+---
+// import { Image } from 'astro:assets';
+const { pathname } = Astro.url;
+---
+
+<header>
+  <a class="logo" href="/" class:list={pathname === '/' ? ['active'] : []}>
+    <!-- <Image class="logo" src={Logo} alt="Logo" /> -->Logo
+  </a>
+  <nav>
+    <ul>
+      <li><a href="/" class:list={pathname === '/' ? ['active'] : []}>Home</a></li>
+      <li>
+        <a href={'/posts/'} class:list={pathname.includes('/posts/') ? ['active'] : []}>Posts</a>
+      </li>
+      <li>
+        <a href={'/about/'} class:list={pathname.includes('/about/') ? ['active'] : []}>About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: sticky;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    background: var(--background-color);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 600;
+    /* color: black; */
+    font-size: 16px;
+    gap: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    /* color: black; */
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  a.logo {
+    text-decoration: none;
+  }
+</style>
