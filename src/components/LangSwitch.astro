@@ -1,0 +1,29 @@
+---
+const { lang } = Astro.props;
+---
+<select name="language">
+  <option value="en" selected={lang === 'en'} aria-label="English">en</option>
+  <option value="de" selected={lang === 'de'} aria-label="German">de</option>
+  <option value="ru" selected={lang === 'ru'} aria-label="Russian">ru</option>
+</select>
+
+<script define:vars={{ lang }}>
+const select = document.querySelector('select');
+select.addEventListener('change', (e) => {
+  const currentPath = window.location.pathname;
+  const newLang = e?.target?.value;
+
+  if (newLang === lang) {
+    return;
+  } else {
+    window.location.assign(currentPath.replace(`/${lang}/`, `/${newLang}/`));
+  }
+});
+</script>
+
+<style>
+select {
+  width: 8ch;
+  margin-bottom: 0;
+}
+</style>

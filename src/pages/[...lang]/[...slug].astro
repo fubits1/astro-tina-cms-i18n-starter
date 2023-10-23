@@ -1,0 +1,30 @@
+---
+import Layout from '@layouts/main.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('editorial');
+  return pages.map((entry) => {
+    // swap lang and path
+    const lang = entry.slug.split('/').pop();
+    const parsedLang = lang === import.meta.env.DEFAULT_LANGUAGE ? undefined : lang;
+    // extract path
+    const slug = entry.slug.split('/').shift();
+    // for /home route we need to pass undefined as slug to get "/"
+    const parsedSlug = slug === 'home' ? undefined : slug;
+    return {
+      params: { lang: parsedLang, slug: parsedSlug },
+      props: { entry, lang, parsedLang, slug, parsedSlug },
+    };
+  });
+}
+
+const { entry, slug, lang } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title} lang={lang}>
+  <code>{slug} | {lang}</code>
+  <h1>{entry.data.title}</h1>
+  <Content />
+</Layout>
