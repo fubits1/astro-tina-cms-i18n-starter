@@ -13,3 +13,12 @@ code block (js)
 ```
 
 [Link](https://tina.io/docs/frameworks/astro/)
+
+<details>
+  <summary>HTML Details Collapsible</summary>
+  <ol>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ol>
+</details>
