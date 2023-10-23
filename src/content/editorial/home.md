@@ -6,6 +6,7 @@ title: Home
 
 * Website: [https://tina.io/](https://tina.io/)
 * [Instructions on self-hosting TinaCMS](https://tina.io/docs/self-hosted/overview/)
+* Repo: [fubits1/astro-tina-cms-starter](https://github.com/fubits1/astro-tina-cms-starter)
 
 ### Testimonials for Tina CMS
 
@@ -16,3 +17,12 @@ title: Home
 
 * Official Astro docs for [TinaCMS](https://docs.astro.build/en/guides/cms/tina-cms/)
 * Official TinaCMS docs for [Astro](https://tina.io/docs/frameworks/astro/)
+
+### TODOs
+
+> (subset from [fubits1/astro-tina-cms-starter/README.md](https://github.com/fubits1/astro-tina-cms-starter#readme))
+
+* figure out how to use Astro's image components / preprocessing with Tina
+  * Tina also has an [Image Field type](https://tina.io/docs/reference/types/image/)
+* figure out `i18n` support [Official docs](https://tina.io/guides/tinacms/internationalization/guide/)
+* figure out `mdx` support [Official docs](https://tina.io/docs/editing/markdown/#providing-custom-components-for-mdx-documents)
