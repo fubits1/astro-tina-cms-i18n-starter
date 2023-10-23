@@ -2,7 +2,7 @@
 
 > Demo: [https://astro-tina-cms-i18n-starter.vercel.app/](https://astro-tina-cms-i18n-starter.vercel.app/)
 
-> [Single-Language Starter]()
+> [Single-Language Starter](https://github.com/fubits1/astro-tina-cms-starter)
 
 > TinaCMS website: <https://tina.io/>
 
