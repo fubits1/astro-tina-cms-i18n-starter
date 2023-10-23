@@ -6,7 +6,7 @@ title: الصفحة الرئيسية
 
 * موقع الكتروني: [https://tina.io/](https://tina.io/)
 * [تعليمات حول الاستضافة الذاتية لـ TinaCMS](https://tina.io/docs/self-hosted/overview/)
-* Repo: [fubits1/astro-tina-cms-starter](https://github.com/fubits1/astro-tina-cms-starter)
+* Repo: [fubits1/astro-tina-cms-i18n-starter](https://github.com/fubits1/astro-tina-cms-i18n-starter)
 
 ### شهادات لـ
 
