@@ -6,3 +6,7 @@ main {
   max-width: 80ch;
   margin: 0 auto;
 }
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
